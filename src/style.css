@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'PoetsenOne-Regular';
+    src: url('./fonts/PoetsenOne-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PoetsenOne-Regular';
 }
 
 body {
