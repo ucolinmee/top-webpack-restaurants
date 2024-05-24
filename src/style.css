@@ -11,7 +11,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background: url('./images/pancakes-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -100,4 +100,27 @@ header button:hover {
 
 #home h1 {
     color: rgb(66,117,160);
+}
+
+/*
+    Menu
+*/
+
+/* .menu-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #FFF;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    aspect-ratio: 1 / 1;
+    height: 75px;
 }
