@@ -1,6 +1,15 @@
-body, html {
-    height: 100%;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url('./images/pancakes-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* 
@@ -8,12 +17,15 @@ body, html {
 */
 
 header {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    background-color: rgba(66,117,160, 0.9);
+    height: 35%;
+    text-align: center;
+    padding: 24px 36px;
+}
+
+header img {
+    height: 200px;
+    border-radius: 50%;
 }
 
 nav {
@@ -21,22 +33,28 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    height: 100%;
-}
-
-header img {
-    height: 50px;
-    border-radius: 50%;
+    gap: 50px;
+    padding-top: 1.5rem
 }
 
 header button {
-    background: none!important;
+    background-color: transparent;
     border: none;
-    padding: 0!important;
+    border-radius: 10px;
+    padding: 8px 12px;
     cursor: pointer;
     color: #fff;
     font-weight: bold;
+    font-size: 20px;
+}
+
+.active {
+    background-color: #FFF;
+    color: rgb(66,117,160);
+}
+
+header button:hover {
+    transform: translateY(-0.2rem);
 }
 
 /*
@@ -45,14 +63,9 @@ header button {
 
 #content {
     height: 100%;
+    position: fixed; 
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
-.bgImg {
-    background: url('./images/pancakes1.jpg');
-    height: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
