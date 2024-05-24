@@ -11,13 +11,15 @@ const loadHeader = () => {
 
     const div = document.createElement('div');
 
+    // img
     const myIcon = new Image();
     myIcon.src = Icon;
     div.appendChild(myIcon);
 
+    // nav
     const nav = document.createElement('nav');
 
-    // Add each section to the navbar
+    // Add each btn to the navbar
     navSections.forEach((section) => {
         const button = document.createElement('button');
         button.id = section.toLowerCase();
