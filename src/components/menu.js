@@ -13,7 +13,7 @@ const loadMenu = () => {
             type: 'Food'
         },
         {
-            name: "Goblin Gang Green Smoothie Bowl",
+            name: "Goblin Gang Smoothie Bowl",
             description: 'A vibrant smoothie bowl made with spinach, kale, and tropical fruits, topped with granola and chia seeds. Healthy and delicious for the green goblins!',
             url: require('../images/menu/goblin-smoothie.png'),
             type: 'Food'
@@ -32,7 +32,7 @@ const loadMenu = () => {
         },
         {
             name: "Inferno Dragon Hot Chocolate",
-            description: 'Rich hot chocolate with a dash of chili powder and topped with whipped cream and chocolate shavings. A fiery twist to warm you up!',
+            description: 'Rich hot chocolate with a dash of chili powder, topped with whipped cream and chocolate shavings. A fiery twist to warm you up!',
             url: require('../images/menu/hot-choco.png'),
             type: 'Drink'
         },
@@ -40,20 +40,20 @@ const loadMenu = () => {
     
     const content = document.getElementById('content');
 
-    // div - food
+    // <div class="menu-section"> - for food
     const food = document.createElement('div');
     food.classList.add('menu-section');
 
-    // h1 - food
+    // <h1>Food</h1>
     const foodHeader = document.createElement('h1');
     foodHeader.innerHTML = "Food";
     food.appendChild(foodHeader);
 
-    // div - drinks
+    // <div class="menu-section"> - for drinks
     const drink = document.createElement('div');
     drink.classList.add('menu-section');
 
-    // h1 - drinks
+    // <h1>Drinks</h1>
     const drinkHeader = document.createElement('h1');
     drinkHeader.innerHTML = "Drinks";
     drink.appendChild(drinkHeader);
@@ -72,7 +72,7 @@ const loadMenu = () => {
 }
 
 const createCard = (name, description, imgUrl) => {
-    // card div
+    // <div class="card">
     var card = document.createElement('div');
     card.classList.add('card');
 
@@ -80,16 +80,16 @@ const createCard = (name, description, imgUrl) => {
     var foodImg = document.createElement('img');
     foodImg.src = imgUrl;
 
-    // card-content div
+    // <div class="card-content">
     var cardContent = document.createElement('div');
     cardContent.classList.add('card-content');
 
-    // h2
+    // <h2>Food title</h2>
     var foodTitle = document.createElement('h2');
     foodTitle.innerHTML = name;
     cardContent.appendChild(foodTitle);
 
-    // p
+    // <p>Food description</p>
     var foodPara = document.createElement('p');
     foodPara.innerHTML = description;
     cardContent.appendChild(foodPara);
