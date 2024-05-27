@@ -85,7 +85,7 @@ header button:hover {
     Home
 */
 
-#home {
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,13 +93,35 @@ header button:hover {
 }
 
 
-#home img {
+.home img {
     aspect-ratio: 1 / 1.25;
-    width: 40%;
+    width: 50%;
 }
 
-#home h1 {
+h1 {
     color: rgb(66,117,160);
+}
+
+.home p {
+    padding: 0 10%;
+}
+
+.socials {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.socials div {
+    display: flex;
+    gap: 15px;
+}
+
+.socials img {
+    aspect-ratio: 1 / 1;
+    height: 30px;
+    cursor: pointer;
 }
 
 /*
