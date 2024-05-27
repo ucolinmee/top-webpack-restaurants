@@ -158,6 +158,6 @@ header button:hover {
 
 #contact-img {
     aspect-ratio: 1/ 1;
-    height: 50vh;
+    width: 75%;
     margin-top: 30px;
 }
